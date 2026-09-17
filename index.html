@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🔗 URL Shortener</h1>
+        <p>Crie e gerencie URLs curtas.</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Criar URL</h2>
+
+            <form id="createForm">
+                <input id="urlInput" type="url" placeholder="https://youtube.com" required>
+
+                <button type="submit">Criar URL</button>
+            </form>
+
+            <div id="createdResult"></div>
+        </section>
+
+        <section class="card">
+
+            <div class="listHeader">
+                <h2>URLs criadas</h2>
+                <button id="refreshButton">↻ Atualizar</button>
+            </div>
+
+            <div id="urlList">
+                <p class="loading">Carregando...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

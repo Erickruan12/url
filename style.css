@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f4f6;
+    color: #111827;
+}
+
+header {
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+
+    color: #6b7280;
+}
+
+main {
+    width: min(900px, 92%);
+
+    margin: auto;
+
+    padding-bottom: 50px;
+}
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+form,
+.search {
+    display: flex;
+
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px 18px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#createdResult,
+#searchResult {
+    margin-top: 15px;
+}
+
+.success {
+    background: #ecfdf5;
+
+    border: 1px solid #a7f3d0;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+.error {
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    color: #991b1b;
+}
+
+.listHeader {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.urlItem {
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-top: 10px;
+}
+
+.urlOriginal {
+    word-break: break-all;
+
+    color: #374151;
+
+    margin-bottom: 8px;
+}
+
+.urlShort {
+    font-weight: bold;
+
+    color: #2563eb;
+
+    word-break: break-all;
+}
+
+.urlActions {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.deleteButton {
+    background: #dc2626;
+}
+
+.deleteButton:hover {
+    background: #b91c1c;
+}
+
+.copyButton {
+    background: #059669;
+}
+
+.copyButton:hover {
+    background: #047857;
+}
+
+.loading {
+    color: #6b7280;
+}
+
+.empty {
+    color: #6b7280;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+
+    form,
+    .search {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .listHeader {
+        gap: 10px;
+
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+}
